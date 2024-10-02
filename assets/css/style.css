@@ -136,7 +136,6 @@ footer{
     background-color:#3C3D37;
     color: whitesmoke;
 }
-
 .container{
     height: 100vh;
     display: grid;
@@ -147,17 +146,94 @@ footer{
     'pie'
     ;
 }
-
-ul{
+.container ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
-ul li{
+.container ul li{
     text-decoration: none;
 }
-
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A04747;
+    color: whitesmoke;
+    transition: all 0.5s;
+    
+}
+.formulario:hover{
+    border-radius: 0 70px 0 0 ;
+    background-color: #2F3645;
+}
+.formulario h3{
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+.formulario form{
+    font-size: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.formulario input{
+    border: none;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+.formulario button{
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    font-size: 1rem;
+    height: 2rem;
+    color: #3C3D37;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+}
+.pie-pagina{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.3rem;
+}
+.pie-pagina h4{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.redes{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 1.1rem;
+}
+.direccion address{
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font-size: 0.7rem;
+}
+.direccion p{
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0;
+}
+.direccion span{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color:#F4CE14;
+}
 /* Media queries */
 @media (min-width:562px){
     .item{
@@ -167,7 +243,7 @@ ul li{
         display: none;
     }
     .container{
-        grid-template-columns: auto 77%;
+        grid-template-columns: auto 72%;
         grid-template-areas:
         'navegador principal'
         'navegador principal'
@@ -200,7 +276,7 @@ ul li{
         margin: 1rem 0;
         padding: 0;
     }
-    ul{
+    .container ul{
         margin: 0;
         padding: 2rem 0;
         flex-direction: column;
@@ -214,7 +290,7 @@ ul li{
 }
 @media (min-width:992px){
     .container{
-        grid-template-columns: auto 85%;
+        grid-template-columns: auto 80%;
     }
     .card{
         width: 15rem;
